@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import {Form,Button,Checkbox,DatePicker,Input,Select} from "antd";
+import {Form,Button,Checkbox,DatePicker,Input,Select,Switch} from "antd";
 
 function App() {
   return (
@@ -31,6 +31,7 @@ function App() {
           <Form.Item name="Website" label="Link To Website">
             <Input placeholder="Add Website URL"/>
           </Form.Item>
+          <Switch checkedChildren="Show" unCheckedChildren="Hide" defaultChecked />
           <Form.Item name="AgreeMent" >
             <Checkbox >Agree To our <a href='#'> Terms And Conditions</a></Checkbox>
           </Form.Item>
