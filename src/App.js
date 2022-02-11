@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Form>
+        <Form labelCol={{span:10}} wrapperCol={{span:12}}>
           <Form.Item name="Name" label="Name">
             <Input placeholder="Enter Your Name"/>
           </Form.Item>
@@ -31,7 +31,7 @@ function App() {
           <Form.Item name="Website" label="Link To Website">
             <Input placeholder="Add Website URL"/>
           </Form.Item>
-          <Switch checkedChildren="Show" unCheckedChildren="Hide" defaultChecked />
+          <Switch checkedChildren="On" unCheckedChildren="Off" defaultChecked />
           <Form.Item name="AgreeMent" >
             <Checkbox >Agree To our <a href='#'> Terms And Conditions</a></Checkbox>
           </Form.Item>
